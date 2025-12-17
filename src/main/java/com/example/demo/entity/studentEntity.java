@@ -9,10 +9,10 @@ public class studentEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotBlank(message="Name is not valid");
+    @NotBlank(message="Name is not valid")
     private String name;
     
-    @Email(message = "Email format is not Valid");
+    @Email(message = "Email format is not Valid")
     private String email;
 
     public void setId(Long id){
