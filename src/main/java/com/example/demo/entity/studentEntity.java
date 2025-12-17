@@ -30,9 +30,4 @@ public class studentEntity {
         this.name = name;
         this.email = email;
     }
-
-
-
-
-
 }
