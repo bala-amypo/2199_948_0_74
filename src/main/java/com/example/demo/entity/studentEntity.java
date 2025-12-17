@@ -1,9 +1,38 @@
 package com.example.demo.entity;
 
-import jakarta.
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
-public class studentEntity{
+@Entity
+public class studentEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
-    private Long id;
+    @NotBlank(message="Name is not valid");
+    private String name;
+    
+    @Email(message = "Email format is not Valid");
+    private String email;
+
+    public void setId(Long id){
+        this.id = id;
+    }
+    public Long getId(){
+        return id;
+    }
+    public studentEntity(){
+
+    }
+
+    public studentEntity(Long id,String name, String email){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+
+
+
 
 }
