@@ -7,3 +7,4 @@ import com.example.demo.entity.studentEntity;
 public interface studentRepo extends Jparepository<studentEntity,Long>{
 
 }
+`1
