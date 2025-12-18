@@ -5,7 +5,12 @@ import com.example.demo.service.*;
 
 @Service
 public class studentServiceImpl implements studentService{
- 
+    
     @Autowired
+    studentRepo repo;
+
+    
+
+  
 
 }
