@@ -1,12 +1,15 @@
 package com.example.demo.service.impl;
+import java.util.List;
 
 import com.example.demo.service.*;
 import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.Service;
+
 
 import com.example.demo.repository.*;
 
 @Service
-public class studentServiceImpl implements studentService{
+public class StudentServiceImpl implements studentService{
     
     @Autowired
     studentRepo repo;

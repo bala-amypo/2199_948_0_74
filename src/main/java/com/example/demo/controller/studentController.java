@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.entity.*;
 
@@ -14,7 +15,7 @@ public class studentController {
     @Autowired
     studentService service;
 
-    @getMapping("/getAllStudent")
+    @GetMapping("/getAllStudent")
     public List<studentEntity> getAll(){
         return service.getAll();
     }
