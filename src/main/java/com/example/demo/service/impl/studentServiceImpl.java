@@ -4,6 +4,7 @@ import java.util.List;
 import com.example.demo.service.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
+import com.example.demo.entity.studentEntity;
 
 
 import com.example.demo.repository.*;
