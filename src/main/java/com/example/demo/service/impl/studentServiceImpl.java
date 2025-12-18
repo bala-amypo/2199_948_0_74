@@ -12,10 +12,8 @@ public class studentServiceImpl implements studentService{
     studentRepo repo;
 
     public List<studentEntity> getAll(){
-        return 
+        return repo.findAll();
     }
-
-
-  
+ 
 
 }
