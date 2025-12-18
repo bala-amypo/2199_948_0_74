@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.*;
 
 import com.example.demo.entity.*;
 
